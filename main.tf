@@ -13,4 +13,4 @@ resource "aws_instance" "ubuntu1" {
   tags = {
     Name = "rahul1"
   }
-i}
+}
