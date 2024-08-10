@@ -62,5 +62,5 @@ jobs:
         run: terraform init
 
       - name: Terraform Destroy
-        run: terraform destroy -var="core_count=1" -var="thread_count=2" -auto-approve
+        run: terraform destroy -var="core_count=1" -var="thread_count=2"
 
