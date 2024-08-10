@@ -39,7 +39,7 @@ jobs:
 
       - name: Apply Terraform (on push to main)
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        run: terraform apply -var="core_count=1" -var="thread_count=2" -auto-approve
+        run: terraform apply -var="core_count=1" -var="thread_count=2" 
 
   destroy:
     name: Terraform Destroy
